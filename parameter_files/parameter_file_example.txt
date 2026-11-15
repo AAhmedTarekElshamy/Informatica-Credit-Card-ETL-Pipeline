@@ -1,0 +1,11 @@
+# Parameter file for wf_load_credit_cards
+# Format: [<Folder>.WF:<Workflow>.ST:<Session>]
+# Update $$CUTOFF_DATE to change the ARCHIVE / CURRENT split:
+#   cards opened BEFORE this date -> CREDIT_CARDS_ARCHIVE
+#   cards opened ON or AFTER this date -> CREDIT_CARDS_CURRENT
+
+[DE_Learning.WF:wf_load_credit_cards.ST:wf_load_credit_cards]
+$$CUTOFF_DATE=01/01/2022 00:00:00
+
+# Example: all cards go to ARCHIVE
+# $$CUTOFF_DATE=01/01/2030 00:00:00
